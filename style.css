@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,500;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #222222;
+  font-family: 'Ubuntu', sans-serif;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.header {
+  margin-top: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.btn {
+  background-color: white;
+  padding: 10px 15px;
+  font-size: 1rem;
+  font-weight: 800;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn + h3 {
+  color: white;
+}
+.guess {
+  border-bottom: 10px solid white;
+  height: 20vh;
+}
+.number {
+  margin-top: 30px;
+  color: white;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.guess-number {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: white;
+  height: 150px;
+  width: 150px;
+  font-size: 8rem;
+}
+.result {
+  margin-top: 100px;
+}
+.result-wrap {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.input {
+  display: flex;
+}
+.input input {
+  border: 5px solid black;
+  padding: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+.output {
+  margin-top: 20px;
+  color: white;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 10px;
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .header {
+    flex-flow: row wrap;
+  }
+  .result-wrap {
+    flex-flow: row wrap;
+  }
+  .input {
+    flex-flow: column wrap;
+    gap: 10px;
+    align-items: start;
+  }
+  .input input {
+    padding: 10px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 920px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1120px;
+  }
+}
